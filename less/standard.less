@@ -21,6 +21,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.text-content {
+  a {
+    color: @gold;
+    display: inline-block;
+    &:after {
+      content: '';
+      display: block;
+      height: 1px;
+      background: @gold;
+      margin-top: -2px;
+    }
+  }
+}
 #sidebar {
   background: #1a1a1a;
   color: #777;
@@ -49,6 +63,9 @@ a {
   ul {
     margin-top: 100px;
     color: #777;
+    @media all and (max-width: 999px) {
+      margin-top: 40px;
+    }
     li {
       .transition(all .2s;);
       &:hover {

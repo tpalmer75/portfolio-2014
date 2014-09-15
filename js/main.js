@@ -20,7 +20,7 @@
 // ------ SAFARI SIZING FIX -------
 
 // Detect Safari Browsers except for Chrome
-if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)|(Windows)/) ) { 
+if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
 
  
   // Safari Size Function

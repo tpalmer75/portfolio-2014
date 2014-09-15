@@ -1,0 +1,31 @@
+extends index.html.jade
+
+block content
+	.portfolio-layout
+		header(style="background-image: url('img/soda-header.jpg');")
+			.shade
+				.title
+					h1 Orange Soda
+					h4 Responsive Front End Development
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="img/soda-3.jpg" alt="Orange Soda Responsive Design")
+				figcaption
+					.text-content
+						p I worked with 
+							a(href="riseragency.com") Riser Agency
+							|  to create a completely responsive template for Orange Soda marketing for a new site launch.
+			figure.image-left
+				img(src="img/soda-1.jpg" alt="Orange Soda Responsive Design")
+				figcaption
+					.text-content
+						p The template allows Orange Soda to custom build each page using modules we provided. This means they can create the design of each page without depending on an agency.
+			figure.image-right
+				img(src="img/soda-2.jpg" alt="Orange Soda Responsive Design")
+				figcaption
+					.text-content
+						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile browser.

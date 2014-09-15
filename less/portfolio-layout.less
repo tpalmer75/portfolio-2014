@@ -1,3 +1,115 @@
 .portfolio-layout {
-	
+	header{
+		background-position: top left;
+		background-repeat: no-repeat;
+		border-bottom: 1px solid #555;
+		@media all and (max-width: 499px) {
+			background-position: center center;
+			background-size: cover;
+		}
+		.shade {
+			padding: 40px;
+			background: fade(#333, 75%);
+			@media all and (max-width: 699px) {
+				padding: 20px;
+			}
+		}
+		.title {
+			display: inline-block;
+			@media all and (max-width: 499px) {
+				text-align: center;	
+				display: block;
+
+			}
+		}
+		h1, h4 {
+			text-shadow: 0 0 5px rgba(0,0,0,.5);
+		}
+		h1 {
+			font-size: 30px;
+			color: #fff;
+			margin-bottom: 12px;
+			@media all and (max-width: 699px) {
+				font-size: 24px;
+				margin-bottom: 8px;
+			}
+		}
+		h4 {
+			text-transform: uppercase;
+			color: #999;
+			font-family: @sans;
+			font-sie: 18px;
+			@media all and (max-width: 699px) {
+				font-size: 14px;
+			}
+		}
+		.icons {
+			float: right;
+			vertical-align: middle;
+			@media all and (max-width: 499px) {
+				float: none;
+				display: block;
+				text-align: center;	
+				margin-top: 10px;	
+			}
+			.fa {
+				color: #fff;
+				font-size: 30px;
+				margin-left: 20px;
+				@media all and (max-width: 699px) {
+					font-size: 20px;
+					margin-left: 10px;
+				}	
+				@media all and (max-width: 499px) {
+					margin: 0 10px;	
+				}
+			}			
+		}
+	}
+	.container {
+		background: #fff;
+		border-top: 1px solid #171717;
+		figure {
+			font-size: 0; /* To remove spacing from inline elements */
+			float: left;
+			img {
+				max-width: 100%;
+				width: 66.6666%;
+				@media all and (max-width: 1200px) {
+					border-width: 15px;
+				}
+				@media all and (max-width: 699px) {
+					border-width: 10px;
+					width: 100%;
+				}
+			}
+			figcaption {
+				width: 33.3333%;
+				display: inline-block;
+				vertical-align: top;
+				padding: 40px;
+				font-size: 16px;
+				line-height: 1.7;
+				color: #888;
+				@media all and (max-width: 1100px) {
+					font-size: 14px;
+					line-height: 24px;
+				}
+				@media all and (max-width: 699px) {
+					width: 100%;
+					display: block;
+				}
+			}
+			&.image-right {
+				figcaption {
+					float: left;
+					text-align: right;
+					@media all and (max-width: 699px) {
+						float: none;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
 }

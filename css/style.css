@@ -126,7 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.group:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -171,6 +171,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.text-content a {
+  color: #9f7142;
+  display: inline-block;
+}
+.text-content a:after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #9f7142;
+  margin-top: -2px;
+}
 #sidebar {
   background: #1a1a1a;
   color: #777;
@@ -207,6 +218,11 @@ a {
 #sidebar ul {
   margin-top: 100px;
   color: #777;
+}
+@media all and (max-width: 999px) {
+  #sidebar ul {
+    margin-top: 40px;
+  }
 }
 #sidebar ul li {
   -webkit-transition: all 0.2s;
@@ -482,6 +498,144 @@ a {
   margin-bottom: 6px;
   display: block;
   text-transform: uppercase;
+}
+.portfolio-layout header {
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #555;
+}
+@media all and (max-width: 499px) {
+  .portfolio-layout header {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+.portfolio-layout header .shade {
+  padding: 40px;
+  background: rgba(51, 51, 51, 0.75);
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout header .shade {
+    padding: 20px;
+  }
+}
+.portfolio-layout header .title {
+  display: inline-block;
+}
+@media all and (max-width: 499px) {
+  .portfolio-layout header .title {
+    text-align: center;
+    display: block;
+  }
+}
+.portfolio-layout header h1,
+.portfolio-layout header h4 {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.portfolio-layout header h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+.portfolio-layout header h4 {
+  text-transform: uppercase;
+  color: #999;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-sie: 18px;
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout header h4 {
+    font-size: 14px;
+  }
+}
+.portfolio-layout header .icons {
+  float: right;
+  vertical-align: middle;
+}
+@media all and (max-width: 499px) {
+  .portfolio-layout header .icons {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+.portfolio-layout header .icons .fa {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout header .icons .fa {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 499px) {
+  .portfolio-layout header .icons .fa {
+    margin: 0 10px;
+  }
+}
+.portfolio-layout .container {
+  background: #fff;
+  border-top: 1px solid #171717;
+}
+.portfolio-layout .container figure {
+  font-size: 0;
+  /* To remove spacing from inline elements */
+  float: left;
+}
+.portfolio-layout .container figure img {
+  max-width: 100%;
+  width: 66.6666%;
+}
+@media all and (max-width: 1200px) {
+  .portfolio-layout .container figure img {
+    border-width: 15px;
+  }
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout .container figure img {
+    border-width: 10px;
+    width: 100%;
+  }
+}
+.portfolio-layout .container figure figcaption {
+  width: 33.3333%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #888;
+}
+@media all and (max-width: 1100px) {
+  .portfolio-layout .container figure figcaption {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout .container figure figcaption {
+    width: 100%;
+    display: block;
+  }
+}
+.portfolio-layout .container figure.image-right figcaption {
+  float: left;
+  text-align: right;
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout .container figure.image-right figcaption {
+    float: none;
+    text-align: left;
+  }
 }
 .touch .item .content .text {
   opacity: 1;
