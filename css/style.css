@@ -151,7 +151,7 @@ table {
   width: device-width;
 }
 body {
-  background: #333;
+  background: #1a1a1a;
   overflow-x: hidden;
   font-family: 'Merriweather', serif;
 }
@@ -174,13 +174,13 @@ a {
 .text-content a {
   color: #9f7142;
   display: inline-block;
+  line-height: 1;
 }
 .text-content a:after {
   content: '';
   display: block;
   height: 1px;
   background: #9f7142;
-  margin-top: -2px;
 }
 #sidebar {
   background: #1a1a1a;
@@ -502,7 +502,7 @@ a {
 .portfolio-layout header {
   background-position: top left;
   background-repeat: no-repeat;
-  border-bottom: 1px solid #555;
+  background-color: #333;
 }
 @media all and (max-width: 499px) {
   .portfolio-layout header {
@@ -528,10 +528,6 @@ a {
     display: block;
   }
 }
-.portfolio-layout header h1,
-.portfolio-layout header h4 {
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
 .portfolio-layout header h1 {
   font-size: 30px;
   color: #fff;
@@ -545,7 +541,7 @@ a {
 }
 .portfolio-layout header h4 {
   text-transform: uppercase;
-  color: #999;
+  color: #ccc;
   font-family: 'Merriweather Sans', sans-serif;
   font-sie: 18px;
 }
@@ -584,7 +580,6 @@ a {
 }
 .portfolio-layout .container {
   background: #fff;
-  border-top: 1px solid #171717;
 }
 .portfolio-layout .container figure {
   font-size: 0;
@@ -636,6 +631,12 @@ a {
     float: none;
     text-align: left;
   }
+}
+.contact-banner {
+  background: #ccc;
+  color: #333;
+  text-align: center;
+  padding: 50px 0;
 }
 .touch .item .content .text {
   opacity: 1;

@@ -43,34 +43,34 @@
     </nav>
     <div id="page">
       <div class="portfolio-layout">
-        <header style="background-image: url('img/soda-header.jpg');">
+        <header style="background-image: url('img/humanities-header.jpg');">
           <div class="shade">
             <div class="title">
-              <h1>Orange Soda</h1>
+              <h1>BYU Humanities</h1>
               <h4>Responsive Front End Development</h4>
             </div>
             <div class="icons"><i class="fa fa-desktop"></i><i class="fa fa-tablet"></i><i class="fa fa-mobile"></i></div>
           </div>
         </header>
         <div class="container clearfix">
-          <figure class="image-right"><img src="img/soda-3.jpg" alt="Orange Soda Responsive Design">
+          <figure class="image-right"><img src="img/humanities-3.jpg" alt="BYU Humanities Responsive Design">
             <figcaption>
               <div class="text-content">
-                <p>I worked with <a href="riseragency.com">Riser Agency</a> to create a completely responsive template for Orange Soda marketing for a new site launch.</p>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
               </div>
             </figcaption>
           </figure>
-          <figure class="image-left"><img src="img/soda-1.jpg" alt="Orange Soda Responsive Design">
+          <figure class="image-left"><img src="img/humanities-preview.jpg" alt="BYU Humanities Responsive Design">
             <figcaption>
               <div class="text-content">
-                <p>The template allows Orange Soda to custom build each page using modules we provided. This means they can create the design of each page without depending on an agency.</p>
+                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
               </div>
             </figcaption>
           </figure>
-          <figure class="image-right"><img src="img/soda-2.jpg" alt="Orange Soda Responsive Design">
+          <figure class="image-right"><img src="img/humanities-1.jpg" alt="BYU Humanities Responsive Design">
             <figcaption>
               <div class="text-content">
-                <p>Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile browsers.</p>
+                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
               </div>
             </figcaption>
           </figure>
@@ -92,44 +92,5 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-54323774-1', 'auto');
     ga('send', 'pageview');
-  </script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script>
-    // Masonry
-    
-    var $container = $('#page');
-    $container.masonry({
-     columnWidth: '.grid-sizer',
-     itemSelector: '.item'
-    });
-    
-    //------- Safari Sizing Fix -------
-    
-    // Detect Safari Browsers except for Chrome
-    if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
-    
-     // Safari Size Function
-     var safariSize = function() {
-     
-      var page = $('#page');
-      
-      // Strip inline width
-      page.css('width', '');
-      
-      // Find page width
-      var pageWidth = $('#page').width();
-      // Finding the nearest width divisible by 12, add 13 for gap
-      var safariWidth = Math.floor(pageWidth / 12) * 12 + 13;
-      
-      // If the page is not divisible by 12, make new width
-      page.css('width', safariWidth);
-      
-     };
-     
-     // Run function on resize
-     $(window).resize(safariSize);
-     // Trigger resize on load to run safariSize function
-     $(window).trigger($.Event('resize'));
-    }
   </script>
 </html>

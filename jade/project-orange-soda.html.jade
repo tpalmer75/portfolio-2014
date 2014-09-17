@@ -1,5 +1,8 @@
 extends index.html.jade
 
+block title
+	title Taylor Palmer | Project: Orange Soda
+
 block content
 	.portfolio-layout
 		header(style="background-image: url('img/soda-header.jpg');")
@@ -28,4 +31,9 @@ block content
 				img(src="img/soda-2.jpg" alt="Orange Soda Responsive Design")
 				figcaption
 					.text-content
-						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile browser.
+						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile browsers.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="contact.html") contacting me
+					|  to work on your next project.

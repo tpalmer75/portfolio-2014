@@ -2,7 +2,7 @@
 	header{
 		background-position: top left;
 		background-repeat: no-repeat;
-		border-bottom: 1px solid #555;
+		background-color: #333;
 		@media all and (max-width: 499px) {
 			background-position: center center;
 			background-size: cover;
@@ -22,9 +22,6 @@
 
 			}
 		}
-		h1, h4 {
-			text-shadow: 0 0 5px rgba(0,0,0,.5);
-		}
 		h1 {
 			font-size: 30px;
 			color: #fff;
@@ -36,7 +33,7 @@
 		}
 		h4 {
 			text-transform: uppercase;
-			color: #999;
+			color: #ccc;
 			font-family: @sans;
 			font-sie: 18px;
 			@media all and (max-width: 699px) {
@@ -68,7 +65,6 @@
 	}
 	.container {
 		background: #fff;
-		border-top: 1px solid #171717;
 		figure {
 			font-size: 0; /* To remove spacing from inline elements */
 			float: left;
@@ -112,4 +108,11 @@
 			}
 		}
 	}
+}
+
+.contact-banner {
+	background: #ccc;
+	color: #333;
+	text-align: center;
+	padding: 50px 0;
 }
