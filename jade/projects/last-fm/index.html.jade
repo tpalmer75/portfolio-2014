@@ -1,0 +1,48 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Last FM
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.portfolio-layout
+		header(style="background-image: url('../../../img/lastfm-header.jpg');")
+			.shade
+				.title
+					h1 Last FM
+					h4 Android App Redesign
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/lastfm-2.jpg" alt="Last FM App Design")
+				figcaption
+					.text-content
+						p 
+							a(href="last.fm") Last FM
+							|  is a fantastic music discovery platform. My personal design brings their app up the par with the latest Android 
+							a(href="http://developer.android.com/design/style/index.html") style&nbsp;guides
+							|  while still retaining it's candid red branding colors.
+			figure.image-left
+				img(src="../../../img/lastfm-preview.jpg" alt="Last FM App Design")
+				figcaption
+					.text-content
+						p The design is built on a 44 pixel grid for spacious touch targets. Album art creates a consistent background throughout the&nbsp;app.
+			figure.image-right
+				img(src="../../../img/lastfm-3.jpg" alt="Last FM App Design")
+				figcaption
+					.text-content
+						p Constant footer controls allow the the user the freedom to explore other artists while they listen. While the current app only scrobbling, my design brings in elements from the desktop site.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="contact.html") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

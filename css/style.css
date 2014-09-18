@@ -176,14 +176,8 @@ a {
 }
 .text-content a {
   color: #9f7142;
-  display: inline-block;
   line-height: 1;
-}
-.text-content a:after {
-  content: '';
-  display: block;
-  height: 1px;
-  background: #9f7142;
+  border-bottom: 1px solid #9f7142;
 }
 #sidebar {
   background: #1a1a1a;
@@ -612,6 +606,11 @@ a {
 }
 .portfolio-layout .container {
   background: #fff;
+}
+@media all and (max-width: 699px) {
+  .portfolio-layout .container {
+    padding-top: 30px;
+  }
 }
 .portfolio-layout .container figure {
   font-size: 0;
