@@ -4,6 +4,9 @@ body {
   font-family: @serif;
   @media (max-width: 999px) {
     &.with-sidebar {
+      #menu-button {
+        opacity: 0;
+      }
       #sidebar {
         left: 0;
         opacity: 1;
@@ -64,11 +67,11 @@ a {
     margin-top: 100px;
     color: #777;
     @media all and (max-width: 999px) {
-      margin-top: 40px;
+      margin-top: 30px;
     }
     li {
       .transition(all .2s;);
-      &:hover {
+      &:hover, active {
         color: #fff;
       }
       a {
@@ -128,23 +131,48 @@ a {
     width: 30px;
     height: 30px;
     background: url('../img/logo.png');
+    @media all and (max-width: 399px) {
+      margin-left: 40px;
+    }
   }
-  #menu-button {
-    position: absolute;
-    line-height: 50px;
-    padding: 0 15px;
-    top: 0;
-    left: 0;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-right: 1px solid #333;
-    color: white;
-    cursor: pointer;
-    height: 100%;
-    font-family: @sans;
-    text-transform: uppercase;
+}  
+
+#menu-button {
+  position: absolute;
+  line-height: 50px;
+  padding: 0 15px;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-right: 1px solid #333;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  font-family: @sans;
+  text-transform: uppercase;
+  opacity: 1;
+  .transition(opacity .25s);
+} 
+
+#mobile-close {
+  padding: 10px 0;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: @sans;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none;
+  .fa {
+    font-size: 16px;
+    margin-right: 5px;
   }
-}    
+  @media all and (max-width: 999px) {
+    display: block;
+  }
+} 
 
 
 
@@ -237,7 +265,7 @@ a {
       line-height: 1.4;
       font-family: @sans;
       background: none;
-      &:hover {
+      &:hover, &:active {
         .text h2:after {
           width: 50%;
         }
@@ -258,20 +286,18 @@ a {
             content: '';
             display: block;
             width: 40%;
-            height: 2px;
+            height: 1px;
             background: @gold;
             margin: 20px 0;
             .transition(width .3s;);
           }
         }
         p {
-          font-size: 18px;
+          font-size: 16px;
           font-family: @serif;
-          @media all and (min-width: @bp-two) and (max-width: @bp-three) {
+          @media all and (max-width: 1100px) {
             font-size: 14px;
-          }
-          @media all and (max-width: 525px) {
-            font-size: 14px;
+            line-height: 24px;
           }
         }
       }
@@ -282,7 +308,7 @@ a {
     width: 100%;
     height: 100%;
     top: 0;
-    &:hover {
+    &:hover, &:active {
       .text {
         opacity: 1;
       }

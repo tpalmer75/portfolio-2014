@@ -1,11 +1,14 @@
-extends index.html.jade
+extends ../../index.html.jade
 
 block title
 	title Taylor Palmer | Project: Orange Soda
 
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
 block content
 	.portfolio-layout
-		header(style="background-image: url('img/soda-header.jpg');")
+		header(style="background-image: url('../../../img/soda-header.jpg');")
 			.shade
 				.title
 					h1 Orange Soda
@@ -16,19 +19,19 @@ block content
 					i.fa.fa-mobile
 		.container.clearfix
 			figure.image-right
-				img(src="img/soda-3.jpg" alt="Orange Soda Responsive Design")
+				img(src="../../../img/soda-3.jpg" alt="Orange Soda Responsive Design")
 				figcaption
 					.text-content
 						p I worked with 
 							a(href="riseragency.com") Riser Agency
 							|  to create a completely responsive template for Orange Soda marketing for a new site launch.
 			figure.image-left
-				img(src="img/soda-1.jpg" alt="Orange Soda Responsive Design")
+				img(src="../../../img/soda-1.jpg" alt="Orange Soda Responsive Design")
 				figcaption
 					.text-content
 						p The template allows Orange Soda to custom build each page using modules we provided. This means they can create the design of each page without depending on an agency.
 			figure.image-right
-				img(src="img/soda-2.jpg" alt="Orange Soda Responsive Design")
+				img(src="../../../img/soda-2.jpg" alt="Orange Soda Responsive Design")
 				figcaption
 					.text-content
 						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile browsers.
@@ -36,4 +39,8 @@ block content
 			.text-content
 				h2 Like my work? Consider 
 					a(href="contact.html") contacting me
-					|  to work on your next project.
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

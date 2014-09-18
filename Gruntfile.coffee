@@ -108,10 +108,14 @@ module.exports = (grunt) ->
 			options:
 				pretty: true
 			compile:
+				base_path:
+				    files:
+				      'dest/path/': ['jade/*.jade']
 				files:[
 					expand: true
 					cwd: 'jade/'
 					src: ['**/*.html.jade']
+					basePath: ''
 					dest: ''
 					ext: '.html'
 				]

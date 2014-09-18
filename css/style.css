@@ -156,6 +156,9 @@ body {
   font-family: 'Merriweather', serif;
 }
 @media (max-width: 999px) {
+  body.with-sidebar #menu-button {
+    opacity: 0;
+  }
   body.with-sidebar #sidebar {
     left: 0;
     opacity: 1;
@@ -221,7 +224,7 @@ a {
 }
 @media all and (max-width: 999px) {
   #sidebar ul {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 #sidebar ul li {
@@ -230,7 +233,8 @@ a {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
-#sidebar ul li:hover {
+#sidebar ul li:hover,
+#sidebar ul li active {
   color: #fff;
 }
 #sidebar ul li a {
@@ -292,7 +296,12 @@ a {
   height: 30px;
   background: url('../img/logo.png');
 }
-#mobile-nav #menu-button {
+@media all and (max-width: 399px) {
+  #mobile-nav .logo-container {
+    margin-left: 40px;
+  }
+}
+#menu-button {
   position: absolute;
   line-height: 50px;
   padding: 0 15px;
@@ -306,6 +315,31 @@ a {
   height: 100%;
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
+  opacity: 1;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -ms-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+}
+#mobile-close {
+  padding: 10px 0;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none;
+}
+#mobile-close .fa {
+  font-size: 16px;
+  margin-right: 5px;
+}
+@media all and (max-width: 999px) {
+  #mobile-close {
+    display: block;
+  }
 }
 #page {
   margin-left: 200px;
@@ -419,7 +453,8 @@ a {
   font-family: 'Merriweather Sans', sans-serif;
   background: none;
 }
-.item.article .content:hover .text h2:after {
+.item.article .content:hover .text h2:after,
+.item.article .content:active .text h2:after {
   width: 50%;
 }
 .item.article .content .text {
@@ -440,7 +475,7 @@ a {
   content: '';
   display: block;
   width: 40%;
-  height: 2px;
+  height: 1px;
   background: #9f7142;
   margin: 20px 0;
   -webkit-transition: width 0.3s;
@@ -449,17 +484,13 @@ a {
   -o-transition: width 0.3s;
 }
 .item.article .content .text p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Merriweather', serif;
 }
-@media all and (min-width: 799px) and (max-width: 999px) {
+@media all and (max-width: 1100px) {
   .item.article .content .text p {
     font-size: 14px;
-  }
-}
-@media all and (max-width: 525px) {
-  .item.article .content .text p {
-    font-size: 14px;
+    line-height: 24px;
   }
 }
 .item .content {
@@ -468,7 +499,8 @@ a {
   height: 100%;
   top: 0;
 }
-.item .content:hover .text {
+.item .content:hover .text,
+.item .content:active .text {
   opacity: 1;
 }
 .item .content .text {
@@ -637,6 +669,13 @@ a {
   color: #333;
   text-align: center;
   padding: 50px 0;
+  line-height: 1.4;
+}
+@media all and (max-width: 999px) {
+  .contact-banner {
+    font-size: 14px;
+    padding: 30px;
+  }
 }
 .touch .item .content .text {
   opacity: 1;

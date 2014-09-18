@@ -1,0 +1,44 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Orange Soda
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.portfolio-layout
+		header(style="background-image: url('../../../img/humanities-header.jpg');")
+			.shade
+				.title
+					h1 BYU Humanities
+					h4 Responsive Front End Development
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/humanities-3.jpg" alt="BYU Humanities Responsive Design")
+				figcaption
+					.text-content
+						p BYU Humanities' custom Wordpress theme features modular CSS that assists in the module-oriented structure, allowing the client freedom in page&nbsp;creation. 
+			figure.image-left
+				img(src="../../../img/humanities-preview.jpg" alt="BYU Humanities Responsive Design")
+				figcaption
+					.text-content
+						p Javascript detects touch recognition, allowing the theme to be accessible to a range of devices and inputs. For example: touch devices cannot&nbsp;hover.
+			figure.image-right
+				img(src="../../../img/humanities-1.jpg" alt="BYU Humanities Responsive Design")
+				figcaption
+					.text-content
+						p Neatly integrated web typography and a custom icon fonts were included in the site to further the existing&nbsp;branding.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="contact.html") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

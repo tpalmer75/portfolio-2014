@@ -23,33 +23,32 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="sidebar"><a href="/">
+    <div id="sidebar">
+      <div id="mobile-close"><i class="fa fa-close"></i><span>Close</span></div><a href="/">
         <div>
           <div class="logo-container"></div>
           <h1><span>TAYLOR</span><br><span style="text-indent: -2px;">PALMER</span></h1>
         </div></a>
       <ul>
         <li><a href="">Work</a></li>
-        <li><a href="">Reading</a></li>
-        <li><a href="">Blog</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </div>
-    <nav id="mobile-nav">
-      <div class="logo-container"></div>
-      <h1>Taylor Palmer</h1>
+    <nav id="mobile-nav"><a href="/">
+        <div class="logo-container"></div>
+        <h1>Taylor Palmer</h1></a>
       <div id="menu-button">Menu</div>
     </nav>
     <div id="page">
-      <div class="grid-sizer"></div><a href="project-byu-humanities.html">
+      <div class="grid-sizer"></div><a href="/projects/byu-humanities">
         <div style="background-image: url('img/humanities-preview.jpg')" class="item w2">
           <div class="content">
             <div class="text">
               <h2><span>View Project:</span>BYU&nbsp;Humanities</h2>
             </div>
           </div>
-        </div></a><a href="project-orange-soda.html">
+        </div></a><a href="/projects/orange-soda">
         <div style="background-image: url('img/soda-preview.jpg')" class="item h2">
           <div class="content">
             <div class="text">
@@ -112,7 +111,7 @@
           <div class="content">
             <div class="text">
               <h2>Blog</h2>
-              <p>My most recent thoughts and works.</p>
+              <p>My most recent thoughts and&nbsp;works.</p>
             </div>
           </div>
         </div></a><a href="">
@@ -125,8 +124,6 @@
         </div></a>
     </div>
   </body>
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/main.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -135,6 +132,8 @@
     ga('create', 'UA-54323774-1', 'auto');
     ga('send', 'pageview');
   </script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <script>
     // Masonry

@@ -18,6 +18,6 @@
 
 // Menu button
 
-$('#menu-button').click(function() {
+$('#menu-button, #mobile-close').click(function() {
   $('body').toggleClass('with-sidebar');
 });
