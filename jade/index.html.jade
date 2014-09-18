@@ -38,11 +38,13 @@ html(lang="en")
 						span(style="text-indent: -2px;") PALMER
 			ul
 				li 
+					a(href="/") Home
+				li 
 					a(href="") Work
 				li 
 					a(href="") About
 				li 
-					a(href="") Contact
+					a(href="/contact") Contact
 		nav#mobile-nav
 			a(href="/")
 				.logo-container
@@ -65,7 +67,7 @@ html(lang="en")
 								h2
 									span View Project:
 									| Orange Soda
-				a(href="")
+				a(href="/contact")
 					.item.article(style="background-color: #fff;")
 						.content
 							.text 
@@ -148,6 +150,7 @@ html(lang="en")
 			//------- Safari Sizing Fix -------
 
 			// Detect Safari Browsers except for Chrome
+			$(document).ready(function() {
 			if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
 
 				// Safari Size Function
@@ -173,4 +176,5 @@ html(lang="en")
 				// Trigger resize on load to run safariSize function
 				$(window).trigger($.Event('resize'));
 			}
+			});
 	

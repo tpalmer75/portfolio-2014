@@ -1,4 +1,6 @@
-.portfolio-layout {
+.layout {
+	background: #fff;
+	min-height: 100%;
 	header{
 		background-position: top left;
 		background-repeat: no-repeat;
@@ -65,9 +67,6 @@
 	}
 	.container {
 		background: #fff;
-		@media all and (max-width: 699px) {
-			padding-top: 30px;
-		}
 		figure {
 			font-size: 0; /* To remove spacing from inline elements */
 			float: left;
@@ -122,5 +121,57 @@
 	@media all and (max-width: 999px) {
 		font-size: 14px;
 		padding: 30px;
+	}
+}
+
+ul.contact {
+	color: #fff;
+	margin: 2%;
+	@media all and (max-width: 599px) {
+		margin: 20px;
+	}
+	a {
+		padding: 40px 0;
+		display: block;
+		&:hover {
+			.fa {
+				color: #fff;
+			}
+		}
+	}
+	.fa {
+		font-size: 42px;
+		color: rgba(255,255,255,.5);
+		margin-bottom: 10px;
+		.transition(color .2s);
+	}
+	h4 {
+		text-transform: uppercase;
+		font-family: @sans;
+
+	}
+}
+
+.box-grid-3 {
+	text-align: center;
+	li {
+		width: 32%;
+		display: inline-block;
+		float: left;
+		margin-bottom: 2%;
+		@media all and (min-width: 900px) {
+			&:nth-of-type(3n + 2) {
+				margin: 0 2%;
+			}
+		}
+		@media all and (max-width: 899px) {
+			width: 48%;
+			margin: 0 1% 2% 1%;
+		}
+		@media all and (max-width: 599px) {
+			width: 100%;
+			margin: 0 auto 20px auto;
+			float: none;
+		}
 	}
 }

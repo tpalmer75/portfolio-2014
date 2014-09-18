@@ -1,0 +1,38 @@
+extends ../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Last FM
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../css/style.css")
+
+block content
+	.layout
+		header
+			.shade
+				.title
+					h1 Contact
+					h4 The easiest ways to find me
+		.container.clearfix
+			ul.contact.box-grid-3
+				li(style="background-color: #777")
+					a(href="http://codepen.io/tpalmer75")
+						i.fa.fa-envelope
+						h4 Email
+				li(style="background-color: #55ACEE")
+					a(href="http://twitter.com/thpalmer75")
+						i.fa.fa-twitter
+						h4 Twitter
+				li(style="background-color: #111")
+					a(href="http://codepen.io/tpalmer75")
+						i.fa.fa-codepen
+						h4 Codepen
+				li(style="background-color: rgb(140, 198, 101);")
+					a(href="http://github.com/tpalmer75")
+						i.fa.fa-github
+						h4 Github
+
+
+block scripts
+	script(src="../js/jquery-2.1.1.min.js")
+	script(src="../js/main.js")
