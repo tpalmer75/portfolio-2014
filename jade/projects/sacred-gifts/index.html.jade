@@ -1,0 +1,50 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Sacred Gifts
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.layout
+		header(style="background-image: url('../../../img/sacred-header.jpg');")
+			.shade
+				.title
+					h1 Sacred Gifts
+					h4 Responsive Wordpress Site
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/sacred-1.jpg" alt="Sacred Gifts Responsive Design")
+				figcaption
+					.text-content
+						p The 
+							a(href="http://moa.byu.edu") BYU Museum of Art
+							|  contracted me to design and build the website for their exhibition 
+							em Sacred Gifts
+							| , which featured religious artwork from three European&nbsp;painters.
+			figure.image-left
+				img(src="../../../img/sacred-3.jpg" alt="Sacred Gifts Responsive Design")
+				figcaption
+					.text-content
+						p The website was designed to provide a fluid experience between the museum's 
+							a(href="https://itunes.apple.com/us/app/sacred-gifts-brigham-young/id723165787?mt=8") iPad app
+							|  and website. I collaborated often with the development and branding&nbsp;teams.
+			figure.image-right
+				img(src="../../../img/sacred-4.jpg" alt="Sacred Gifts Responsive Design")
+				figcaption
+					.text-content
+						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile&nbsp;browsers.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="contact.html") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

@@ -93,14 +93,14 @@ html(lang="en")
 							.text
 								h2 Reading
 								p From A to Zeldman, see what's on my&nbsp;shelf.
-				a(href="")
+				a(href="/projects/fx-comiccon")
 					.item.quarter(style="background-image: url('img/fx-preview.jpg')")
 						.content
 							.text
 								h2
 									span View Project:
 									| FX Comic Con Blog
-				a(href="")
+				a(href="/projects/sacred-gifts")
 					.item.quarter(style="background-image: url('img/sacred-preview.jpg')")
 						.content
 							.text
@@ -118,8 +118,8 @@ html(lang="en")
 					.item.article(style="background: #fff;")
 						.content
 							.text
-								h2 Blog
-								p My most recent thoughts and&nbsp;works.
+								h2 About
+								p How I got into interaction design (and stuff like&nbsp;that).
 				a(href="")
 					.item(style="background-image: url('img/money-preview.jpg')")
 						.content
@@ -141,17 +141,11 @@ html(lang="en")
 		script.
 			// Masonry
 
-			var $container = $('#page');
-			$container.masonry({
-				columnWidth: '.grid-sizer',
-				itemSelector: '.item'
-			});
-
-			//------- Safari Sizing Fix -------
+			//------- Sizing Fix -------
 
 			// Detect Safari Browsers except for Chrome
-			$(document).ready(function() {
-			if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
+			//- $(document).ready(function() {
+			//- if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
 
 				// Safari Size Function
 				var safariSize = function() {
@@ -175,6 +169,14 @@ html(lang="en")
 				$(window).resize(safariSize);
 				// Trigger resize on load to run safariSize function
 				$(window).trigger($.Event('resize'));
-			}
+			//- }
+			//- });
+
+			var $container = $('#page');
+			$container.masonry({
+				columnWidth: '.grid-sizer',
+				itemSelector: '.item'
 			});
+
+			
 	

@@ -1,0 +1,47 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: FX Comic Con
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.layout
+		header(style="background-image: url('../../../img/fx-comiccon-header.jpg');")
+			.shade
+				.title
+					h1 FX Comic Con Blog
+					h4 Responsive Front End Development
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/fx-1.jpg" alt="FX Blog Responsive Design")
+				figcaption
+					.text-content
+						p FX has a lasting relationship with 
+							a(href="http://riseragency.com") Riser
+							|  and need a simple but intuitive solution for their 
+							a(href="http://blogs.fxnetworks.com/") 2014 Comic Con&nbsp;blog. 
+			figure.image-left
+				img(src="../../../img/fx-2.jpg" alt="FX Blog Responsive Design")
+				figcaption
+					.text-content
+						p Understanding the situations in which the users would be accessing the blog gave insight into the development process. Responsive development and social integration were&nbsp;key.
+			figure.image-right
+				img(src="../../../img/fx-3.jpg" alt="FX Blog Responsive Design")
+				figcaption
+					.text-content
+						p Careful attention was given to progressive enhancement. An HTML shim was used to support Internet Explorer 8, while well-written CSS supported all major desktop and mobile&nbsp;browsers.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="contact.html") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

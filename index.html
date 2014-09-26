@@ -86,14 +86,14 @@
               <p>From A to Zeldman, see what's on my&nbsp;shelf.</p>
             </div>
           </div>
-        </div></a><a href="">
+        </div></a><a href="/projects/fx-comiccon">
         <div style="background-image: url('img/fx-preview.jpg')" class="item quarter">
           <div class="content">
             <div class="text">
               <h2><span>View Project:</span>FX Comic Con Blog</h2>
             </div>
           </div>
-        </div></a><a href="">
+        </div></a><a href="/projects/sacred-gifts">
         <div style="background-image: url('img/sacred-preview.jpg')" class="item quarter">
           <div class="content">
             <div class="text">
@@ -111,8 +111,8 @@
         <div style="background: #fff;" class="item article">
           <div class="content">
             <div class="text">
-              <h2>Blog</h2>
-              <p>My most recent thoughts and&nbsp;works.</p>
+              <h2>About</h2>
+              <p>How I got into interaction design (and stuff like&nbsp;that).</p>
             </div>
           </div>
         </div></a><a href="">
@@ -139,17 +139,11 @@
   <script>
     // Masonry
     
-    var $container = $('#page');
-    $container.masonry({
-     columnWidth: '.grid-sizer',
-     itemSelector: '.item'
-    });
-    
-    //------- Safari Sizing Fix -------
+    //------- Sizing Fix -------
     
     // Detect Safari Browsers except for Chrome
-    $(document).ready(function() {
-    if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
+    //- $(document).ready(function() {
+    //- if (navigator.userAgent.indexOf('Safari') != -1 && !navigator.userAgent.match(/(Chrome)/) ) { 
     
      // Safari Size Function
      var safariSize = function() {
@@ -173,7 +167,14 @@
      $(window).resize(safariSize);
      // Trigger resize on load to run safariSize function
      $(window).trigger($.Event('resize'));
-    }
+    //- }
+    //- });
+    
+    var $container = $('#page');
+    $container.masonry({
+     columnWidth: '.grid-sizer',
+     itemSelector: '.item'
     });
+    
   </script>
 </html>
