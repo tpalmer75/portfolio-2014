@@ -1,0 +1,46 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Money.org
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.layout
+		header(style="background-image: url('../../../img/money-header.jpg');")
+			.shade
+				.title
+					h1 Money.org
+					h4 Responsive Front End Development
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/money-2.jpg" alt="Money.org Responsive Design")
+				figcaption
+					.text-content
+						p I worked with 
+							a(href="riseragency.com") Riser Agency
+							|  to create a new website for the American Numismatic Association. The new setup included profiles, messages, friends, and&nbsp;gamification.
+			figure.image-left
+				img(src="../../../img/money-3.jpg" alt="Money.org Responsive Design")
+				figcaption
+					.text-content
+						p A custom CMS was developed that featured modular page creation and gamification analytics. I assisted in the interface design process and created a front end build using&nbsp;Bootstrap.
+			figure.image-right
+				img(src="../../../img/money-5.jpg" alt="Money.org Responsive Design")
+				figcaption
+					.text-content
+						p A unique LESS workflow allowed us to create separate stylesheets for each module, and ultimately compile them into one CSS file. Organization was key as several developers worked side by side in a git&nbsp;environment.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="/contact") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

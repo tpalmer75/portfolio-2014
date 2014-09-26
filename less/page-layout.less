@@ -128,19 +128,26 @@
 }
 
 ul.contact {
-	color: #fff;
+	margin-bottom: 100px;
+	margin-top: 30px;
 	li {
-		width: 33.33%;
-		float: left;
+		width: 33%;
+		display: inline-block;
 		text-align: center;
-		@media all and (max-width: 499px) {
-			width: 50%;
+		margin-top: 20px;
+		@media all and (max-width: 899px) {
+			width: 49%;
+		}
+		@media all and (max-width: 450px) {
+			width: 100%;
 		}
 	}
-	a {
-		padding: 40px 0;
-		display: block;
-		&:hover {
+	.round {
+		margin: auto;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		&:hover, &.active {
 			.fa {
 				color: #fff;
 			}
@@ -149,12 +156,13 @@ ul.contact {
 	.fa {
 		font-size: 42px;
 		color: rgba(255,255,255,.5);
-		margin-bottom: 10px;
+		margin-top: 30px;
 		.transition(color .2s);
 	}
 	h4 {
-		text-transform: uppercase;
 		font-family: @sans;
+		color: #333;
+		margin-top: 20px;
 
 	}
 }

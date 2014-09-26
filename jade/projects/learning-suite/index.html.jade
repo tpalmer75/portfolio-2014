@@ -1,0 +1,44 @@
+extends ../../index.html.jade
+
+block title
+	title Taylor Palmer | Project: Learning Suite
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../../css/style.css")
+
+block content
+	.layout
+		header(style="background-image: url('../../../img/learning-header.jpg');")
+			.shade
+				.title
+					h1 Learning Suite
+					h4 Responsive UI Design
+				.icons
+					i.fa.fa-desktop
+					i.fa.fa-tablet
+					i.fa.fa-mobile
+		.container.clearfix
+			figure.image-right
+				img(src="../../../img/learning-1.jpg" alt="Learning Suite UI Design")
+				figcaption
+					.text-content
+						p Learning Suite is BYU's academic content system, used by professors and students all over campus. I had the opportunity to create the initial responsive&nbsp;mockups.
+			figure.image-left
+				img(src="../../../img/learning-3.jpg" alt="Learning Suite UI Design")
+				figcaption
+					.text-content
+						p I gave presentations and HTML/CSS demos to illustrate the possible design solutions to the existing site structure.
+			figure.image-right
+				img(src="../../../img/learning-2.jpg" alt="Learning Suite UI Design")
+				figcaption
+					.text-content
+						p Some innovation was necessary as we thought through the use of obstacles such as tables, dynamic content, and form input.
+		.contact-banner
+			.text-content
+				h2 Like my work? Consider 
+					a(href="/contact") contacting me
+					|  to work on your next&nbsp;project.
+
+block scripts
+	script(src="../../js/jquery-2.1.1.min.js")
+	script(src="../../js/main.js")

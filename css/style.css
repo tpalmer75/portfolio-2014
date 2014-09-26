@@ -188,6 +188,9 @@ em {
   line-height: 1;
   border-bottom: 1px solid #9f7142;
 }
+.text-content p {
+  line-height: 1.4;
+}
 #sidebar {
   background: #1a1a1a;
   color: #777;
@@ -690,37 +693,48 @@ em {
   }
 }
 ul.contact {
-  color: #fff;
+  margin-bottom: 100px;
+  margin-top: 30px;
 }
 ul.contact li {
-  width: 33.33%;
-  float: left;
+  width: 33%;
+  display: inline-block;
   text-align: center;
+  margin-top: 20px;
 }
-@media all and (max-width: 499px) {
+@media all and (max-width: 899px) {
   ul.contact li {
-    width: 50%;
+    width: 49%;
   }
 }
-ul.contact a {
-  padding: 40px 0;
-  display: block;
+@media all and (max-width: 450px) {
+  ul.contact li {
+    width: 100%;
+  }
 }
-ul.contact a:hover .fa {
+ul.contact .round {
+  margin: auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+ul.contact .round:hover .fa,
+ul.contact .round.active .fa {
   color: #fff;
 }
 ul.contact .fa {
   font-size: 42px;
   color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px;
+  margin-top: 30px;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
 }
 ul.contact h4 {
-  text-transform: uppercase;
   font-family: 'Merriweather Sans', sans-serif;
+  color: #333;
+  margin-top: 20px;
 }
 .touch .item .content .text {
   opacity: 1;
