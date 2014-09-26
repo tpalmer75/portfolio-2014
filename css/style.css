@@ -190,6 +190,40 @@ em {
 }
 .text-content p {
   line-height: 1.4;
+  margin: 15px 0;
+}
+.text-content h1 {
+  font-size: 36px;
+}
+.text-content h2 {
+  font-size: 36px;
+}
+.text-content h3 {
+  font-size: 30px;
+}
+.text-content h4 {
+  font-size: 24px;
+}
+.text-content h6 {
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin: 15px 0;
+}
+.text-content ul {
+  list-style: circle inside none;
+  line-height: 1.4;
+  -webkit-columns: 250px 2;
+  -moz-columns: 250px 2;
+  columns: 250px 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.text-content ul li {
+  margin: 5px 0;
 }
 #sidebar {
   background: #1a1a1a;
@@ -620,6 +654,26 @@ em {
     margin: 0 10px;
   }
 }
+.layout header.about {
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.layout header.about .shade {
+  background: rgba(51, 51, 51, 0.25);
+}
+.layout header .me {
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 25px 0;
+}
+@media all and (max-width: 699px) {
+  .layout header .me {
+    width: 100px;
+    margin: 15px 0;
+  }
+}
 .layout .container {
   background: #fff;
 }
@@ -686,10 +740,15 @@ em {
   padding: 50px 0;
   line-height: 1.4;
 }
+.contact-banner h2 {
+  font-size: 16px;
+}
 @media all and (max-width: 999px) {
   .contact-banner {
-    font-size: 14px;
     padding: 30px;
+  }
+  .contact-banner h2 {
+    font-size: 14px;
   }
 }
 ul.contact {
@@ -735,6 +794,29 @@ ul.contact h4 {
   font-family: 'Merriweather Sans', sans-serif;
   color: #333;
   margin-top: 20px;
+}
+.text-wrapper {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 10px;
+}
+@media all and (max-width: 699px) {
+  .text-wrapper {
+    font-size: 14px;
+  }
+  .text-wrapper h1 {
+    font-size: 20px;
+  }
+}
+.text-wrapper h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 30px;
+}
+.text-wrapper h6 {
+  color: #9f7142;
+}
+.text-wrapper .text-content {
+  color: #333;
 }
 .touch .item .content .text {
   opacity: 1;

@@ -1,0 +1,48 @@
+extends ../index.html.jade
+
+block title
+	title Taylor Palmer | About
+
+block css
+	link(type="text/css" rel="stylesheet" href="../../css/style.css")
+
+block content
+	.layout
+		header.about(style="background-image: url('../img/about-header.jpg');")
+			.shade
+				img.me(src="../img/me2.jpg" alt="A picture of me!")
+
+		.container.clearfix
+			.text-wrapper
+				.text-content
+					h1(style="text-align: center;") About Me
+					p I'm a graphic designer turned front-end developer turned interaction designer. I'm passionate about well designed interfaces (and just about anything).
+					p I grew up in Houston, Texas and moved to Utah when I was 18 to attend Brigham Young University. I studied PR for one semester when I realized that I enjoyed creating the graphics for marketing for than the writing. I picked up a job doing web design and have loved it ever since. I will recieve my BA in graphic design in spring of 2015.
+					p I lived for two years in Costa Rica from ages 19 to 21 on a church mission. I speak fluent Spanish. I've been happily married since summer of 2014.
+					p Once I graduate I'm looking to dig deep into user experience design. I've had some great mentors that have shown me the impact that good UX can have. I'm a hard worker and a team player. Having a background in both design and development, I communicate well to designers and engineers. If you're an employer, I hope you'll consider the impact I could have on your company.
+					h6 Skills & Expertise
+					ul.skills
+						li UX/UI Design
+						li Mobile First Approach
+						li Responsive Design
+						li Progressive Enhancement
+						li Typography
+						li Branding
+						li Retina/HiDPI Design
+						li User stories & research
+						li HTML/JADE
+						li CSS/LESS/SASS
+						li jQuery
+						li Git, Bootstrap, Wordpress
+			.contact-banner
+				.text-content
+					h2 Like what you see? Consider 
+						a(href="/contact") contacting me
+						|  to work on your next project.
+
+				
+
+
+block scripts
+	script(src="../js/jquery-2.1.1.min.js")
+	script(src="../js/main.js")
